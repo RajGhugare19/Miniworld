@@ -437,9 +437,9 @@ class Key(MeshEnt):
     Key the agent can pick up, carry, and use to open doors
     """
 
-    def __init__(self, color):
+    def __init__(self, color, height=0.35):
         assert color in COLOR_NAMES
-        super().__init__(mesh_name=f"key_{color}", height=0.35, static=False)
+        super().__init__(mesh_name=f"key_{color}", height=height, static=False)
 
 
 class Ball(MeshEnt):
